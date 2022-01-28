@@ -1,0 +1,467 @@
+@font-face {
+  font-family: Georgia, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* grid areas */
+header { grid-area: 'header'; } 
+main { grid-area: 'main'; }
+footer { grid-area: 'footer'; }
+
+body {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-rows: 100%;
+  grid-template-columns: 100%;
+  margin: 0 auto;
+  grid-template-areas:
+    'header'
+    'main'
+    'footer'
+    ;
+}
+
+
+
+/* if phone*/
+@media (min-width: 0px) and (max-width: 1100px) { 
+  
+  .container-logo {
+    display: grid;
+    grid-template-columns: 1fr auto;
+  }
+
+  .logo {
+    margin: 20px auto !important;
+  }
+
+  .container {
+    display: inline-block !important;
+    width: 100%;
+    text-align: start;
+  }
+
+  .container-top-middle {
+    display: none;
+  }
+
+  .container-top-right {
+    display: none;
+  }
+
+  header {
+    position: relative;
+  }
+
+  nav, #menu-checkbox {
+    display: none;
+  }
+
+  .hamburger-icon {
+    padding: 0px 15px; 
+    font-size: xx-large;
+  }
+
+  #menu-checkbox:checked ~ nav {
+    display: block;  
+  }
+
+  nav ul {
+    display: block !important;
+    position: static;
+    background: white;
+    padding: 5px 0px 5px 5px;
+  }
+
+  nav ul a {
+    font-size: 28px;
+    padding: 15px 0px 0px 12px; 
+  }
+  
+
+  .img-header {
+    height: 300px !important;
+  }
+
+  main div .slogan {
+    margin: 12% auto;
+    max-width: 270px;
+    font-size: 2em;
+  }
+
+  .cta-explore {
+    margin: -3% auto;
+    width: 70px;
+    padding: 10px 20px;
+    font-size: 16px !important;
+  }
+   
+  .block-style {
+    height: 6px;
+  }
+
+  .block-style-img {
+    height: 50px;
+  }
+
+
+}
+
+/* if tablet */
+@media (min-width: 700px) and (max-width: 1100px) { 
+
+  .img-header {
+    height: 600px !important;
+  }
+
+  main div .slogan {
+    margin: 16% auto 0px;
+    max-width: 670px;
+    font-size: 4.5em;
+  }
+
+  .cta-explore {
+    margin: 8% auto;
+    width: 140px;
+    padding: 10px 20px;
+    font-size: 28px !important;
+  }
+
+  .block-style {
+    height: 12px;
+  }
+
+  .block-style-img {
+    height: 100px;
+  }
+
+}
+
+
+/* if desktop */
+@media (min-width: 1100px)  { 	
+
+  header input[type="checkbox"], .hamburger-icon {
+    display: none;
+  }
+
+  nav {
+    text-align: center;
+  }
+
+  nav ul, nav a {
+    display: inline-block !important; 
+    padding: 10px 30px 0px 30px; 
+  }
+
+  .img-header {
+    height: 900px !important;
+  }
+
+  main div .slogan {
+    margin: 13% auto;
+    max-width: 1100px;
+    font-size: 7.5em;
+  }
+
+  .cta-explore {
+    margin: -5% auto;
+    width: 180px;
+    padding: 10px 20px;
+  }
+
+  .block-style {
+    height: 18px;
+  }
+
+  .block-style-img {
+    height: 150px;
+  }
+
+ 
+} 
+
+
+/* global */
+
+
+
+/* global header*/
+
+.container {
+  display: grid;
+  background-color: rgba(77, 92, 53, 0.7);
+  color: white;
+  font-family: Verdana, Tahoma, sans-serif;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: baseline;
+}
+
+.container-top a {
+  color: white;
+  padding: 5px 5px 5px 10px;
+}
+
+.container-top-middle {
+  text-align: center;
+  padding: 5px 0px;
+}
+
+.container-top-right {
+  text-align: end;
+  padding: 5px 10px 5px 0px;
+}
+
+
+.logo {
+  display: grid;
+  grid-template-rows: 1fr;
+  background: url(/images/RainyDays_Logo_Altered_Colors_default.png) no-repeat;
+  width: 250px;
+  height: 83px;
+  margin: 20px 0px 0px 20px;
+  text-indent: -9999px;
+}
+
+.logo:hover, .logo:active {
+  background: url(/images/RainyDays_Logo_Altered_Colors_hover_state.png) no-repeat;
+}
+
+nav ul {
+  display: block;
+  margin: 0 auto;
+  list-style: none;
+
+}
+
+nav a {
+  display: block;
+  color: black;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 32px;
+  font-weight: lighter;
+  text-decoration: none;
+}
+
+
+/* home header */
+
+.img-header {
+  background: url(/images/home_train.png) no-repeat;
+  background-size: cover;
+  background-position-x: left 8%;
+  width: 100%;  
+  color: transparent;
+  
+}
+
+.slogan {
+  display: block;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  -webkit-text-stroke: 1px rgba(91, 88, 85, 0.4);
+  -webkit-text-stroke-width: thin;
+  -webkit-font-smoothing: 90%;
+}
+
+
+
+/* global links */
+
+a {
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 8px auto;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+/* global CTA */
+
+.cta {
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: 32px;
+}
+
+
+/* home CTAs */
+
+.cta-explore {
+  display: block;
+  background-color: #285c6e;
+  color: white;
+  font-weight: thin;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  border-color: rgba(40, 92, 110, 0.7);
+  border-radius: 6px;
+  border-width: thin;
+  stroke-width: 1 #285c6e;
+  cursor: pointer;
+  resize: none;
+}
+
+.cta-explore:hover,
+.cta-explorer:active {
+  display: block;
+  background-color: black;
+  border-color: rgb(0, 0, 0);
+  stroke-width: 1 black;
+  outline-color: 2px black;
+}
+
+
+/* home main */
+
+.block-style {
+  display: block;
+  background-color: rgba(77, 92, 53, 0.7);
+  text-align: center;
+  margin: 0 auto; 
+}
+  
+
+.block-style-img {
+  display: block;
+  background: url(/images/Greendecor.png) no-repeat;
+  margin: 0px auto;
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* global main */
+
+main {
+}
+
+
+
+
+
+/* global fonts */
+
+h1 {
+  color: black;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 32px;
+  font-weight: lighter;
+}
+
+h2 {
+  color: #7a4b1c;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 32px;
+  font-weight: lighter;
+}
+
+h3 {
+  color: black;
+  text-align: left;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  font-weight: lighter;
+  opacity: 100%;
+  padding: 4px 0px;
+}
+
+p {
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: 16px;
+}
+
+/* global footer */
+
+footer {
+  background-color: rgba(91, 88, 85, 0.6);
+  text-align: center;
+   
+}
+
+.footer-sitemap {
+  display: inline-block;
+  text-align: left;
+  list-style: none;
+
+}
+
+.floated {
+  float: left;
+  margin: 10px 30px;
+}
+
+
+input {
+  width: 80%;
+  height: 40px;
+}
+
+
+footer input[type="email"] {
+  display: inline-block;
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: 16px;
+  color: black;
+  border-radius: 6px;
+  border-color: rgba(91, 88, 85, 0.7);
+  border-width: thin;
+  stroke-width: 1 rgba(91, 88, 85, 0.7);
+  outline-color: none;
+  margin: 5px auto;
+  cursor: pointer;
+  resize: none;
+}
+
+
+footer input[type="submit"] {
+  display: inline-block;
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: 16px;
+  color: white;
+  background-color: black;
+  border-radius: 6px;
+  border-color: rgba(0, 0, 0);
+  border-width: thin;
+  stroke-width: 1 rgba(0, 0, 0);
+  outline-color: none;
+  margin: 5px 0px;
+  cursor: pointer;
+  resize: none;
+}
+
+
+footer input[type="submit"]:hover {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.65);
+  border-color: rgba(0, 0, 0, 0.65);
+  border-width: thin;
+  stroke-width: 1 rgba(0, 0, 0, 0.65);
+  outline-color: none;
+}
+
+footer input[type="submit"]:active {
+  display: inline-block;
+  background-color: #4d5c35;
+  border-color: #4d5c35;
+  border-width: thin;
+  stroke-width: 1 #4d5c35;
+  outline-color: none;
+}
+
+footer .copy {
+  background-color: rgba(91, 88, 85, 0.75);
+  display: block;
+  text-align: right;
+  padding: 4px;
+  color: black;
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: 16px;
+  font-weight: lighter;
+}

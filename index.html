@@ -1,10 +1,110 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>My first website</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Rainydays jackets made to last all seasons"/>
+    <link href="/css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Rainydays | Home</title>
   </head>
   <body>
-    <h1>Hello world!</h1>
-    <p>Welcome to my first website.</p>
+    <header>
+      <section class="container">
+        <div class="container-top"> 
+          <a href="/user-account/signup.html">Sign up and get 20% off your first order</a>
+        </div>
+        <div class="container-top-middle">
+          <i class="fas fa-truck"></i> Fast delivery
+        </div>
+        <div class="container-top-right"> 
+          30 Days return policy
+        </div>      
+      </section>
+      <section>
+        <div class="container-logo">
+          <a href="index.html"><img scr="/images/RainyDays_Logo_Altered_Colors_default.png" alt="Rainydays home logo" class="logo"/></a>
+        </div>
+      </section>
+      <section>
+        <input type="checkbox" id="menu-checkbox">
+        <label for="menu-checkbox" class="hamburger-icon"><i class="fas fa-bars"></i></label>
+        <nav> 
+          <ul>
+            <a href="/products/all-jackets.html">Jackets</a>
+            <a href="about.html">About</a>
+            <a href="/contact/contact-europe.html">Contact</a>              
+          </ul>
+        </nav>              
+        </div>
+      </section>   
+    </header>
+  <main>
+    <section>
+      <div class="img-header">
+        <div><img scr="/images/home_train.png" alt="Man in black rain jacket waiting on an orange train in the rain"/></div>
+        <div><h2 class="slogan">Jackets made to last all seasons</h2>
+      <div><a href="/products/all-jackets.html" class="cta cta-explore">EXPLORE</a></div>
+      </div>
+      </div> 
+    </section>
+    <section>
+      <div>
+        <div class="block-style"></div>
+        <div class="block-style-img"></div>
+        <div class="block-style"></div>
+      </div>
+    </section>
+    <section>
+      <div>
+        <div>
+          <a href="/products/jackets-women.html" class="cta cta-shop cta-women">Shop women</a>
+        </div>
+        <div>
+          <a href="products/jackets-men.html" class="cta cta-shop cta-men">Shop men</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <section class="footer-sitemap">
+      <div class="floated"> 
+        <h3>Newsletter sign up</h3>
+        <form action="form-success.php" method="get">
+          <input type="email" name="email" id="email" placeholder="Type your e-mail" required/>
+          <input type="submit" value="Subscribe"/>
+        </form>
+      </div>
+      <div class="floated">
+        <h3>Information</h3>
+        <p>
+          <li><a href="#">Payment & shipment</a></li>
+          <li><a href="#">Returns & refunds</a></li>
+          <li><a href="#">Terms & conditions</a></li>
+          <li><a href="#">Privacy policy</a></li>
+        </p>
+      </div>
+      <div class="floated">
+        <h3>About</h3>
+        <p>
+          <li><a href="#">We are Rainydays</a></li>
+          <li><a href="#">Plant a tree</a></li>
+        </p>
+      </div>
+      <div class="floated">
+        <h3>Contact</h3>
+        <p>
+          <li><a href="#">Customer support</a></li>
+          <li><a href="#">Contact us</a></li>
+        </p>
+      </div>
+    </section>
+    <section class="copy">
+      <div>
+        <p>&copy; 2022 Rainydays</p>
+      </div>
+    </section>
+  </footer>
   </body>
 </html>
