@@ -1,74 +1,57 @@
-@font-face {
-  font-family: Georgia, Verdana, Geneva, Tahoma, sans-serif;
-}
-
-
-/* grid areas */
-header { grid-area: 'header'; } 
-main { grid-area: 'main'; }
-footer { grid-area: 'footer'; }
-
-body {
-  display: grid;
-  grid-gap: 1em;
-  grid-template-rows: 100%;
-  grid-template-columns: 100%;
-  margin: 0 auto;
-  grid-template-areas:
-    'header'
-    'main'
-    'footer'
-    ;
-}
-
-
-
-/* if phone*/
-@media (min-width: 0px) and (max-width: 1100px) { 
+/* global if phone*/
+@media (min-width: 0px) and (max-width: 1000px) { 
   
   .container-logo {
-    display: grid;
-    grid-template-columns: 1fr auto;
+    display: flex;
+    justify-content: center;
   }
-
-  .logo {
-    margin: 20px auto !important;
-  }
-
+ 
   .container {
     display: inline-block !important;
     width: 100%;
     text-align: start;
   }
 
-  .container-top-middle {
+  .container-top {
+    padding: 0px 0px;
+  }
+
+  .container-top-middle, .desktop-icons, .icon-account a, .icon-wishlist a {
     display: none;
+  }
+  
+  .icon-cart a {
+    font-size: x-large;
+    text-decoration: none !important;
+    padding: 0px 0px 0px 10px; 
+    margin: 129.5px 20px !important;
   }
 
   .container-top-right {
     display: none;
   }
 
-  header {
-    position: relative;
-  }
-
-  nav, #menu-checkbox {
+  nav, #menu-checkbox, .desktop-icons {
     display: none;
   }
 
-  .hamburger-icon {
-    padding: 0px 15px; 
+  .hamburger-icon  {
+    padding: 15px 0px 0px 15px;
     font-size: xx-large;
+    cursor: pointer;
+  }
+
+  .home-icons {
+    padding: 20px 0px 0px 15px;
+    font-size: x-large;
   }
 
   #menu-checkbox:checked ~ nav {
-    display: block;  
+    display: flex;  
   }
 
   nav ul {
-    display: block !important;
-    position: static;
+    flex: 1;
     background: white;
     padding: 5px 0px 5px 5px;
   }
@@ -78,6 +61,22 @@ body {
     padding: 15px 0px 0px 12px; 
   }
   
+  .nav-text-icons a {
+    margin: -50px 0px 10px 20px;
+    padding: 30px 0px 0px 15px;
+    font-weight: lighter !important;
+  }
+
+  .nav-text-icons a, .nav-text a {
+    color:rgb(40, 92, 110);
+    font-family: georgia;
+    font-size: 18px;
+  } 
+
+  .nav-text a {
+    margin: 0px 0px 10px 0px;
+    padding: 10px 0px 0px 15px;
+  }
 
   .img-header {
     height: 300px !important;
@@ -87,6 +86,10 @@ body {
     margin: 12% auto;
     max-width: 270px;
     font-size: 2em;
+  }
+
+  .slogan {
+    width: 100% !important;
   }
 
   .cta-explore {
@@ -107,8 +110,10 @@ body {
 
 }
 
-/* if tablet */
-@media (min-width: 700px) and (max-width: 1100px) { 
+
+/* global if tablet */
+@media (min-width: 700px) and (max-width: 1000px) { 
+
 
   .img-header {
     height: 600px !important;
@@ -118,6 +123,10 @@ body {
     margin: 16% auto 0px;
     max-width: 670px;
     font-size: 4.5em;
+  }
+
+  .slogan {
+    width: 70% !important;
   }
 
   .cta-explore {
@@ -135,15 +144,42 @@ body {
     height: 100px;
   }
 
+  footer div {
+    flex: 1 0 200;
+    padding: 0px 0px 0px 10px;
+  }
+
+  .newsletter {
+    display: flex; 
+    flex-direction: column;
+    flex: 1 0 100%;
+    padding: 0px 0px 0px 10px;
+  }
+  
+  .newsletter input {
+    width: 200px;
+    margin: 10px 10px 0px 0px;
+  }
+
+
 }
 
 
 /* if desktop */
-@media (min-width: 1100px)  { 	
+@media (min-width: 1001px)  { 	
 
-  header input[type="checkbox"], .hamburger-icon {
+  header input[type="checkbox"], .hamburger-icon, .home-icons a, .nav-text, .nav-text-icons, .home-icons {
     display: none;
   }
+
+  .logo {
+    margin: 40px 0px 10px 20px !important;
+  }
+
+  hr {
+    display: none;
+  }
+
 
   nav {
     text-align: center;
@@ -151,7 +187,7 @@ body {
 
   nav ul, nav a {
     display: inline-block !important; 
-    padding: 10px 30px 0px 30px; 
+    padding: 20px 20px 0px 20px; 
   }
 
   .img-header {
@@ -178,13 +214,73 @@ body {
     height: 150px;
   }
 
- 
+
+  .header-container {
+    display: flex;
+    position: relative;
+  }
+  
+  nav {
+   flex: 0 0 100px;
+   position: absolute;
+  }
+
+  .home-icons {
+    font-size: x-large; 
+  }
+  
+  .nav-container {
+   display: flex;
+  }
+  
+  nav {
+  flex: 1; 
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 45px;
+  transform: translateX(-50%);
+  }
+
 } 
+
+.container-search {  
+  justify-content: left;
+  justify-content: left;
+  align-items: right;
+}
+
+input[type="text"] {
+  display: inline-block;
+  width: 40% !important;
+  height: 2.5em !important;
+  padding: 0 15px;
+}
+
+button {
+  display: inline-block;
+  background: transparent;
+  font-size: x-large !important;
+  border-radius: 6px;
+  width: 50px !important;
+  top: 20% !important;
+  bottom: 0px;
+  right: 18em;
+  background: transparent;
+  height: 43px !important;
+  cursor: pointer;
+}
+
+
 
 
 /* global */
 
-
+hr {
+  margin: 0 auto;
+  
+  border: 1px solid rgba(122, 75, 28, 0.4);
+}
 
 /* global header*/
 
@@ -195,11 +291,13 @@ body {
   font-family: Verdana, Tahoma, sans-serif;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   align-items: baseline;
+  margin: 0px 0px 20px 0px;
 }
 
 .container-top a {
   color: white;
   padding: 5px 5px 5px 10px;
+  width: 100%;
 }
 
 .container-top-middle {
@@ -212,14 +310,13 @@ body {
   padding: 5px 10px 5px 0px;
 }
 
-
 .logo {
-  display: grid;
-  grid-template-rows: 1fr;
+  display: flex;
+  position: relative;
   background: url(/images/RainyDays_Logo_Altered_Colors_default.png) no-repeat;
   width: 250px;
   height: 83px;
-  margin: 20px 0px 0px 20px;
+  margin: 10px -46px -47px auto;
   text-indent: -9999px;
 }
 
@@ -228,19 +325,34 @@ body {
 }
 
 nav ul {
-  display: block;
-  margin: 0 auto;
   list-style: none;
-
+  margin: 0 auto;
 }
 
 nav a {
   display: block;
   color: black;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Georgia, "Times New Roman", sans-serif, Tahoma, Verdana;
   font-size: 32px;
   font-weight: lighter;
   text-decoration: none;
+}
+
+.desktop-icons {
+  display: inline-flex;
+  text-align: end;
+  position: absolute;
+  left: 89%;
+  top: 78px;
+  transform: translateX(-50%);
+}
+
+.icon-account a, .icon-wishlist a, .icon-cart a {
+  position: relative;
+  font-size: x-large;
+  text-decoration: none !important;
+  padding: 0px 0px 0px 10px; 
+  margin: 20px 20px;
 }
 
 
@@ -252,20 +364,23 @@ nav a {
   background-position-x: left 8%;
   width: 100%;  
   color: transparent;
-  
 }
 
 .slogan {
+  width: 65%;
+}
+
+
+.slogan,
+.cta-shop {
   display: block;
   color: white;
   font-weight: bold;
   text-align: center;
-  -webkit-text-stroke: 1px rgba(91, 88, 85, 0.4);
+  -webkit-text-stroke: 1px rgba(91, 88, 85, 0.6);
   -webkit-text-stroke-width: thin;
   -webkit-font-smoothing: 90%;
 }
-
-
 
 /* global links */
 
@@ -280,6 +395,7 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
 
 
 /* global CTA */
@@ -318,150 +434,278 @@ a:hover {
 }
 
 
-/* home main */
 
-.block-style {
-  display: block;
-  background-color: rgba(77, 92, 53, 0.7);
-  text-align: center;
-  margin: 0 auto; 
+
+.container-shop {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
 }
-  
 
+.image-container {
+  position: relative;
+  height: 400px;
+  width: 600px;
+  margin: 150px auto;
+  overflow: hidden;
+}
+
+.image-item {
+  background-size: cover;
+  transition: 0.5s all ease-in-out;
+  height: 400px;
+}
+
+.shop-women {
+  background: url(/images/woman_in_yellow_jacket_bike_desktop.png) no-repeat;
+}
+
+.shop-men {
+  background: url(/images/man_running_on_mountain_desktop.png) no-repeat;
+}
+
+.image-container a {
+  position: absolute;
+  z-index: 1000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px 10px;
+}
+
+.image-item:hover {
+  transform: scale(1.3);
+  opacity: 80%;
+}
+
+.cta-shop {
+  font-family: Verdana, Tahoma, serif;
+  font-size: 45px;
+  color: rgba(255, 255, 255);
+  text-decoration-line: none !important;
+  background-color: rgba(40, 92, 110, 0.5);
+  width: 85%;
+}
+
+/* if phone */
+@media (min-width: 0px) and (max-width: 699px) {
+
+  .shop-women {
+    background: url(/images/mobile_woman_in_yellow_jacket_bike.png) no-repeat;
+  }
+  
+  .shop-men {
+    background: url(/images/mobile_man_running_on_mountain.png) no-repeat;
+  }
+
+  .container-shop {
+    display: block;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .image-container {
+    position: relative;
+    height: 200px;
+    width: 300px;
+    margin: 50px auto;
+  }
+
+  .image-item {
+    height: 200px;
+  }
+
+  .cta-shop {
+    font-size: 30px !important;
+  }
+}
+
+/* if tablet */
+@media (min-width: 700px) and (max-width: 1000px) {
+
+  .shop-women {
+    background: url(/images/tablet_woman_in_yellow_jacket_bike.png) no-repeat;
+  }
+  
+  .shop-men {
+    background: url(/images/tablet_man_running_on_mountain.png) no-repeat;
+  }
+
+  .container-shop {
+    display: block;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .image-container {
+    position: relative;
+    height: 300px;
+    width: 400px;
+    margin: 100px auto;;
+  }
+
+  .image-item {
+    height: 300px;
+  }
+
+  .cta-shop {
+    font-size: 40px !important;
+  }
+
+}
+
+/* global main */
+
+.block-style, 
 .block-style-img {
   display: block;
+  margin: 0 auto;
+}
+
+.block-style {
+  background-color: rgba(77, 92, 53, 0.7);
+  text-align: center;
+}
+  
+.block-style-img {
   background: url(/images/Greendecor.png) no-repeat;
-  margin: 0px auto;
   background-size: cover;
   background-position: center;
 }
 
 
-/* global main */
-
-main {
-}
-
-
-
-
-
 /* global fonts */
 
-h1 {
-  color: black;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 32px;
+h1, h3 {
+  font-family: Georgia, Verdana, Tahoma, serif;
   font-weight: lighter;
+  color: black;
+}
+
+h1 {
+  font-size: 32px;
 }
 
 h2 {
+  font-family: Verdana;
+  font-size: 28px;
   color: #7a4b1c;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 32px;
   font-weight: lighter;
 }
 
 h3 {
-  color: black;
-  text-align: left;
-  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 18px;
-  font-weight: lighter;
-  opacity: 100%;
-  padding: 4px 0px;
 }
 
-p {
+p, 
+footer .copy {
   font-family: Verdana, Tahoma, sans-serif;
   font-size: 16px;
+  color: black;
 }
+
 
 /* global footer */
 
 footer {
   background-color: rgba(91, 88, 85, 0.6);
-  text-align: center;
-   
+  font-family: Georgia, Tahoma, sans-serif;
 }
 
 .footer-sitemap {
-  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
   text-align: left;
+  justify-content: center;
+  gap: 10px;
   list-style: none;
-
+  padding: 10px;
 }
 
-.floated {
-  float: left;
-  margin: 10px 30px;
-}
+footer div {
+  flex: 1 0 200px;
+  padding: 10px;
+ }
 
 
-input {
-  width: 80%;
+footer input, input[type="text"] {
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: 16px;
   height: 40px;
+  width: 80%;
+  stroke-width: 1;
+  border-width: bold;
+  border-radius: 6px;
+  margin: 10px 0px 10px 0px;
+  outline: none;
+  resize: none;
+  cursor: pointer;
 }
-
 
 footer input[type="email"] {
-  display: inline-block;
-  font-family: Verdana, Tahoma, sans-serif;
-  font-size: 16px;
   color: black;
-  border-radius: 6px;
-  border-color: rgba(91, 88, 85, 0.7);
-  border-width: thin;
-  stroke-width: 1 rgba(91, 88, 85, 0.7);
-  outline-color: none;
-  margin: 5px auto;
-  cursor: pointer;
-  resize: none;
+  border-color: rgba(91, 88, 85, 0.9);
 }
-
 
 footer input[type="submit"] {
-  display: inline-block;
-  font-family: Verdana, Tahoma, sans-serif;
-  font-size: 16px;
   color: white;
   background-color: black;
-  border-radius: 6px;
   border-color: rgba(0, 0, 0);
-  border-width: thin;
-  stroke-width: 1 rgba(0, 0, 0);
-  outline-color: none;
-  margin: 5px 0px;
-  cursor: pointer;
-  resize: none;
 }
-
 
 footer input[type="submit"]:hover {
-  display: inline-block;
-  background-color: rgba(0, 0, 0, 0.65);
-  border-color: rgba(0, 0, 0, 0.65);
-  border-width: thin;
-  stroke-width: 1 rgba(0, 0, 0, 0.65);
-  outline-color: none;
+  background-color: rgba(77, 92, 53, 0.7);
+  border-color: rgba(77, 92, 53, 0.7);
 }
-
+ 
 footer input[type="submit"]:active {
-  display: inline-block;
-  background-color: #4d5c35;
-  border-color: #4d5c35;
-  border-width: thin;
-  stroke-width: 1 #4d5c35;
-  outline-color: none;
+  background-color: rgb(77, 92, 53);
+  border-color: rgba(77, 92, 53, 0.7);
 }
 
 footer .copy {
-  background-color: rgba(91, 88, 85, 0.75);
   display: block;
+  background-color: rgba(91, 88, 85, 0.75);
   text-align: right;
-  padding: 4px;
-  color: black;
-  font-family: Verdana, Tahoma, sans-serif;
-  font-size: 16px;
-  font-weight: lighter;
+  padding: 2px 10px;
+}
+
+
+
+/* About page*/
+
+.move-cta-explore a{
+  margin: 20px auto!important;
+}
+
+.about-text-first-p, 
+.about-text-second-p {
+  width: 70%;
+  margin: 50px auto ;
+  padding: 10px;
+}
+
+
+.about-header {
+  margin: 80px auto;
+  text-align: center;
+  
+}
+
+.line {
+  display: block;
+  border-bottom: 2px solid rgba(122, 75, 28, 0.4);
+  width: 60%;
+  margin: 0 auto;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+.content-wrapper {
+  margin: 80px auto;
+  width: 70%;
+  text-align: center;
+  
 }
