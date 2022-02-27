@@ -1,0 +1,115 @@
+/* Main CTAs */
+
+.shop-women, .shop-men, .center-cta-checkout {
+  display: flex;
+}
+
+.cta-explore {
+  display: block;
+  position: absolute;
+  width: 30%;
+  margin: -25% 0% 0% 45%; 
+}
+
+.cta-explore:hover, 
+.shop-women:hover,
+.shop-men:hover,
+.subscribe:hover, 
+.cta-explore-about:hover,
+.cta-view-details:hover, 
+.cta-add-to-cart:hover, 
+.cta-homepage:hover,
+.cta-continue-shopping:hover, 
+.cta-checkout:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-color: var(--black);
+  transition: ease-out 0.6s;
+  color: var(--white);
+}
+
+.shop-women-container,
+.shop-men-container {
+    justify-content: center;
+    height: 183px;
+    width: 275px; 
+    margin: 20px auto 40px auto;  
+    overflow: hidden;  
+}
+
+.shop-women-container {
+  background: url(/images/mob_woman_in_yellow_jacket_bike.jpg) no-repeat;
+}
+
+.shop-men-container {
+  background: url(/images/mob_man_running_on_mountain.jpg) no-repeat;
+}
+  
+.shop-women,
+.shop-men {
+  width: 100%;
+  padding: 20px 0px;
+  margin: 60px auto;
+  border: solid 2px var(--blue-text);
+  background: rgba(40, 92, 110, 0.85);
+  justify-content: center;
+  text-transform: uppercase;  
+  font-size: 20px;
+}
+
+.shop-women:hover,
+.shop-men:hover {
+  transform: scale(1.2);
+}
+
+.cta-homepage, .cta-continue-shopping, .cta-checkout {
+  padding: 12px 20px !important
+}
+
+.cta-explore-about {
+    padding: 10px 24px !important;
+}
+
+.cta-add-to-cart {
+  margin: 20px 0px 0px 0px;
+}
+
+.center-cta-checkout {
+  margin: 40px auto 40px auto;
+  justify-content: center;
+}
+
+.cta-checkout {
+  font-size: 16px;
+}
+
+.cta-homepage, .cta-continue-shopping {
+  font-size: 18px;
+}
+
+.cta, .shop-women, .shop-men, .cta-view-details, .cta-add-to-cart, .cta-homepage, .subscribe, .cta-explore, .cta-explore-about, .cta-view-details, .cta-add-to-cart, .cta-homepage, .cta-continue-shopping, .cta-checkout {
+  color: var(--white);
+}
+
+#jacket-specific-women .cta-checkout, #jacket-specific-men .cta-checkout, #cart-checkout .cta-checkout {
+  text-transform: none;
+}
+
+#cart-checkout input[type="submit"], .cta-explore, .cta-explore-about, .cta-checkout {
+  text-transform: uppercase;
+}
+
+.cta, .shop-women, .shop-men, .cta-view-details, .cta-add-to-cart, .cta-homepage {
+  font-family: var(--text-cta-paragraph);
+  font-weight: lighter;
+  text-decoration: none;
+  text-align: center;
+}
+
+.cta, .cta-view-details, .cta-add-to-cart, .cta-homepage {
+    padding: 12px 12px;
+}
+
+.cta-explore, .subscribe, .cta-explore-about, .cta-view-details, .cta-add-to-cart, .cta-homepage, .cta-continue-shopping, .cta-checkout  {
+  border: solid 2px var(--blue-text);
+  background: rgba(40, 92, 110, 0.85); 
+}

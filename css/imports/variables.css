@@ -1,0 +1,12 @@
+:root {
+    --text-cta-paragraph: verdana, tahoma, georgia, sans-serif;
+    --black: #000;
+    --white: #fff;
+    --blue-text: rgb(40, 92, 110);
+    --green: rgba(77, 92, 53, 0.7);
+    --blue: rgba(40, 92, 110, 0.7);
+    --brown: rgba(122, 75, 28, 0.4);
+    --brown-text: rgb(122, 75, 28);
+    --grey-block: rgba(91, 88, 85, 0.6);
+    --transparent: transparent;
+}

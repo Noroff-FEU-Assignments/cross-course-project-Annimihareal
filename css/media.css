@@ -1,0 +1,872 @@
+/* Hidden content for screens below standard size */
+@media (min-width: 0px) and (max-width: 230px) {
+  
+  body, header, main, footer {
+    display: none;
+  } 
+
+}
+
+
+/* If smaller screens (smart-watches, older phones, smaller tablets that needs adjustment from global styles) */
+@media (min-width: 0px) and (max-width: 312px) {
+
+  .decor-img {
+    display: none;
+  }
+
+  .women-product-list, .men-product-list {
+    grid-template-columns: repeat(1, 4fr);
+    grid-gap: 30px;
+    overflow: hidden;
+  }
+
+  .logo {
+    background: url(/images/smallerdevices_RainyDays_Logo_Altered_Colors_default.png) no-repeat;
+    width: 130px;
+    height: 49px;
+    margin: 0 auto;
+  }
+
+  .logo-container {
+    top: 102px;
+  }
+
+  .shop-women-container {
+    background: url(/images/small_woman_in_yellow_jacket_bike.jpg) no-repeat;
+  }
+  
+  .shop-men-container {
+    background: url(/images/small_man_running_on_mountain.jpg) no-repeat;
+  }
+
+  i, .hamburger-icon i {
+    font-size: large;
+  }
+
+  .border-summary hr, .about-container, .contact-container, .club-benefits-container, .login-container, .signup-container {
+    width: 80%;
+  }
+
+  .checkout-container-cart .border, .checkout-container-cart .border-summary, #cart-checkout main form input, #login main form input, #signup main form input, #checkout-success main hr,  #jacket-specific-women select, #jacket-specific-men select, #all-jackets main hr, #jackets-women main hr, #jackets-men main hr, footer input[type="text"] {
+    width: 90%;
+  }
+
+  .border, .border-summary {
+    max-width: 290px;
+  }
+
+  .shop-women-container,
+  .shop-men-container {
+    width: 200px; 
+    height: 147px;
+  }  
+  
+  footer .space {
+    padding: 5px 0px;  
+  }
+
+  .cta-explore, .cta-homepage, .cta-continue-shopping, .cta-checkout {
+    padding: 8px 6px;
+  }  
+
+  .space-above {
+    padding: 10px 0px 0px 0px;
+  }
+
+  #cart-checkout main form input, #login main form input, #signup main form input {
+    padding: 10px 5px;
+  }
+
+  .item-four {
+    padding-left: 11px;
+  }  
+
+  .shop-women,
+  .shop-men {
+    padding: 15px 0px;
+    margin: 50px auto;  
+  }
+
+  .slogan {
+    padding: 20px 0px 0px 0px;
+  }
+
+  .description-space {
+    padding: 20px 10px;
+  } 
+
+  .item-one {
+    padding-left: 26px;
+  }
+  
+  .item-two {
+    padding-left: 64px;
+  }
+  
+  .item-three {
+    padding-left: 34px;
+    text-decoration: line-through;
+  }
+
+  .border, .checkout-container-cart {
+    grid-template-columns: repeat(1, 2fr);
+  }
+
+  .cart-img-container {
+    margin: 20px 20px 0px 20px;
+  }
+
+  footer button {
+    margin: 20px auto 20px auto;
+  }
+
+  .hr-half {
+    margin: 20px auto 30px;
+  }
+
+  .item-five {
+    margin-left: 41px;
+  }
+
+  .checkout-container-cart .border, .checkout-container-cart .border-summary {
+    margin: 0px auto 40px auto;
+    justify-content: center;
+  }
+
+  .cta-explore, .slogan, .cta-homepage, .cta-continue-shopping, .cta-checkout  {
+    font-size: 12px;
+  }
+
+  #cart-checkout main form ::placeholder, #cart-checkout main form input, fieldset select, .order-summary p, .description-space p {
+    font-size: 14px;
+  }
+ 
+  #checkout-success main p, .shop-women, .shop-men  {
+    font-size: 16px;
+  }
+
+   #checkout-success h1 {
+    font-size: 22px;
+  }
+
+}
+
+
+@media (min-width: 312px) {
+
+  .decor-img {
+    display: none;
+  }
+
+  .checkout-container-cart, .border {
+    grid-template-columns: repeat(1, 2fr);
+  }
+
+  .women-product-list, .men-product-list {
+    grid-template-columns: repeat(1, 4fr);
+    grid-gap: 30px;
+    overflow: hidden;
+  }
+
+  .about-container, .contact-container, .club-benefits-container, .checkout-container, .login-container, .signup-container, footer input[type="text"], #all-jackets main hr, #jackets-women main hr, #jackets-men main hr, .border-summary hr, .checkout-container-cart .border, .checkout-container-cart .border-summary {
+    width: 80%;
+  }
+
+  #cart-checkout main form input, #login main form input, #signup main form input {
+    width: 90%
+  }
+
+  .border, .border-summary {
+    max-width: 290px;
+  }  
+
+  .slogan {
+    padding: 10px 0px 0px 0px;
+  }
+
+  #cart-checkout main form input, #login main form input, #signup main form input {
+    padding: 10px 5px;
+  }
+
+  .cta-explore, .cta-homepage, .cta-continue-shopping {
+    padding: 10px 8px;
+  }  
+
+  .space-above {
+    padding: 20px 0px 0px 0px;
+  }
+
+  .description-space {
+    padding: 20px 10px;
+  }
+
+  .item-four {
+    padding-left: 60px;
+  }
+
+  .item-one {
+    padding-left: 80px;
+  }
+  
+  .item-three {
+    padding-left: 85px;
+    text-decoration: line-through;
+  }
+  
+  .item-five {
+    margin-left: 90px;
+  }
+
+  .item-two {
+    padding-left: 125px;
+  }
+
+  .checkout-container-cart .border, .checkout-container-cart .border-summary {
+    margin: 0px auto 40px auto;
+    justify-content: center;
+  }
+
+  .cart-img-container {
+    margin: 20px 20px 0px 20px;
+  }
+
+  .cta-explore, .cta-homepage, .cta-continue-shopping, #cart-checkout main form ::placeholder, #cart-checkout main form input {
+    font-size: 16px;
+  }
+
+}
+
+
+@media (min-width: 400px) {
+
+  .women-product-list, .men-product-list {
+    grid-template-columns: repeat(2, 3fr);
+  }
+
+  #cart-checkout main form input, #login main form input, #signup main form input {
+    width: 80%;
+  }
+
+}
+
+
+@media (min-width: 500px) {
+
+  
+  .description-space {
+    display: inline-block;
+    padding: 20px 50px;
+  }  
+
+  .border {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cta-explore, .cta-explore-about {
+    padding: 12px 10px;
+    font-size: 20px; 
+  }  
+
+  .slogan {
+    font-size: 24px;
+    padding: 20px 0px 0px 0px;
+  }
+
+  .cart-img-container {
+    margin: 20px 10px 20px 20px;
+  }  
+
+  .hr-half {
+    margin: 20px auto 60px;
+  }  
+
+  footer input[type="text"] {
+    width: 50%;
+  }
+
+  #all-jackets main hr, #jackets-women main hr, #jackets-men main hr, #cart-checkout main form input, #login main form input, #signup main form input {
+    width: 70%;
+  }    
+
+  .checkout-container-cart .border, .checkout-container-cart .border-summary{
+    width: 90%;
+    margin: 0px auto 40px auto;
+    justify-content: center;
+  }
+
+  .border, .border-summary {
+    max-width: 410px;
+  }  
+    
+  .item-four {
+    padding-left: 122px;
+  }
+
+  .item-one {
+    padding-left: 140px;
+  }
+
+  .item-three {
+    padding-left: 146px;
+    text-decoration: line-through;
+  }
+
+  .item-five {
+    margin-left: 155px;
+  }
+
+  .item-two {
+    padding-left: 186px;
+  }
+
+}
+
+
+@media (min-width: 600px) {
+
+  .description-space {
+    display: inline-block;
+    padding: 20px 90px;
+  }
+
+  .decor-img {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    border-radius: 50%;
+    width: 200px;
+    height: 190px;
+    top: 144px;
+  }  
+
+  .shop-women-container {
+    background: url(/images/tab_woman_in_yellow_jacket_bike.jpg) no-repeat;
+  }
+  
+  .shop-men-container {
+    background: url(/images/tab_man_running_on_mountain.jpg) no-repeat;
+  }
+
+  .shop-women,
+  .shop-men {
+    font-size: 24px;
+    padding: 30px 0px;
+    margin: 90px auto;  
+  }
+
+  #jacket-specific-women select, #jacket-specific-men select {
+    width: 50%;
+  }
+
+  .about-container,
+  .contact-container, .checkout-success-container, .club-benefits-container, .checkout-container, .login-container, .signup-container {
+    width: 70%;
+  }
+
+  .shop-women-container,
+  .shop-men-container {
+    width: 400px; 
+    height: 267px;
+  }
+
+  footer .space {
+    padding: 10px 0px;  
+  }
+
+  #about .decor-img {
+    background: url(/images/decor_img_large_canoeing.jpg) no-repeat;
+    background-position-x: left 70%;
+    background-position-y: top 60%;
+  }
+
+  #contact .decor-img {
+    background: url(/images/decor_img_small_couple_rain.jpg) no-repeat;
+    background-position-x: left 50%;  
+  }
+
+  .slogan {
+    font-size: 28px;
+  }  
+
+}
+
+
+@media (min-width:700px) {
+
+  .decor-img {
+    left: 46%;
+    width: 250px;
+    height: 230px;
+    top: 120px;
+  }
+
+  #cart-checkout main form input, #login main form input, #signup main form input {
+    width: 60%;
+  }
+
+  #about .decor-img {
+    background-position-x: left 75%;
+  }
+
+  #contact .decor-img {
+    background: url(/images/decor_img_medium_couple_rain.jpg) no-repeat;
+    background-position-x: left 50%;  
+  }
+
+}
+
+
+@media (min-width: 800px) {
+  
+  .center {
+    display: flex;
+    justify-content: center;
+  }
+
+  .description-space, footer button {
+    display: inline-block;
+  }
+
+  footer input[type="text"] {
+    width: 30%;
+  }
+
+  .sitemap li {
+    padding: 20px 30px;
+  }
+
+  .description-space {
+    padding: 20px 110px;
+  }
+
+  footer button {
+    padding: 5px 20px;
+    margin: 0px auto;
+  }
+
+  .cta-explore, .cta-explore-about {
+    padding: 14px 12px;
+    font-size: 24px; 
+  }  
+
+  .copy {
+    padding: 20px 20px 0px 0px; 
+    text-align: right;
+  }    
+
+  footer ::placeholder, footer input[type="text"] {
+    text-align: left;
+  }
+
+}
+
+
+@media (min-width: 900px) {
+  
+  .original-jacket img { 
+    display: inline-flex; 
+    max-width: 390px;
+  }
+
+  .checkout-container-cart {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+  }
+
+  #contact .decor-img {
+    background: url(/images/decor_img_large_couple_rain.jpg) no-repeat;
+    background-position-x: left 50%;  
+  }
+
+  #about .decor-img {
+    background-position-x: left 84%;
+  }  
+
+  .description-space {
+    padding: 20px 20px;
+  }
+
+  #cart-checkout main form input {
+    width: 35%;
+    padding: 10px 0px;
+  }
+
+  #jacket-specific-women select, #jacket-specific-men select {
+    width: 40%;
+  }
+  
+  .checkout-container-delivery fieldset {
+    width: 70%;
+  }
+
+  .decor-img {
+    width: 300px;
+    height: 268px;
+    left: 43%;
+    top: 97px;
+  }
+
+  fieldset input[type="text"], fieldset input[type="tel"], fieldset input[type="email"], fieldset input[type="month"], fieldset input[type="password"]  {
+    margin: 15px 20px;
+  }
+
+  .cart-img-container {
+    margin: 20px 10px 0px 20px;
+  }  
+
+  #cart-checkout main fieldset {
+    margin: 0px auto 40px auto;
+  }
+
+  .checkout-container-info {
+    margin: 58px auto 0px auto;
+  }
+
+  .checkout-container-cart .border, .checkout-container-cart .border-summary {
+    width: 90%;
+    max-width: 410px;
+    max-height: 295px;    
+    margin: 0px auto;
+    justify-content: center;
+  }
+
+  .border-summary {
+    min-width: 300px; 
+    max-width: 410px;  
+    margin: 0px 20px;
+  }
+
+}
+
+
+/* If desktop */
+@media (min-width: 1100px) {
+
+  #menu-checkbox:checked, header input[type="checkbox"], header hr, .hamburger-icon, .nav-mobile, .decor-img, #checkout-success .space-cta {
+    display: none;
+  }
+
+  .about-container, .contact-container, .club-benefits-container, .login-container, .signup-container, .club-benefits-img-container {
+    display: flex 1;
+  }
+
+  header div, header div li, header div a, .bottom-divider, .nav-i-desktop, .hr-footer, .center-shop, .jacket-specific-title-container, .specific-jacket-container  {
+    display: flex;
+  }
+
+  #menu-checkbox:checked ~ .bottom-divider {
+    display: flex;
+    top: -148px;
+  } 
+
+  nav {
+    display: inline-flex !important;
+    width: 40%;
+    padding: 20px 0px 34px 0px;
+    left: 50%;
+    top: -133px;
+    transform: translateX(-50%);
+    text-align: center; 
+    background: none;
+    overflow: hidden;
+  } 
+
+  .jacket-specific-title-container {
+    justify-content: left;
+  }
+
+  #checkout-success main .cta-inline {
+    display: inline;
+    padding: 0px 20px 0px 20px;
+  }
+
+  .women-product-list, .men-product-list {
+    grid-template-columns: repeat(4, 4fr);
+  }
+
+  nav, .about-container, .contact-container, .club-benefits-container, .login-container, .signup-container, .checkout-container-cart,  .checkout-container, .checkout-container-cart, .jacket-specific-title-container, .specific-jacket-container {
+    position: relative;
+  }  
+
+  .shop-women-container {
+    background: url(/images/tab_woman_in_yellow_jacket_bike.jpg) no-repeat;
+  }
+  
+  .shop-men-container {
+    background: url(/images/tab_man_running_on_mountain.jpg) no-repeat;
+  }
+
+  #jacket-specific-women select, #jacket-specific-men select, header form {
+    width: 30%;
+  } 
+
+  #cart-checkout main form input {
+    width: 35%;
+  }
+
+  #all-jackets main hr, #jackets-women main hr, #jackets-men main hr, #login main form input, #signup main form input {
+    width: 50%;
+  }  
+
+  .about-container, .contact-container, .club-benefits-container, .checkout-container, .login-container, .signup-container, .checkout-container-delivery fieldset {
+    width: 60%;
+  }
+
+  .all-jackets-container {
+    width: 90%;
+  } 
+
+ .border-summary {
+    min-width: 410px;
+    max-width: 410px;
+  }
+
+  nav li {
+    padding: 0px;
+  }
+
+  input[type="text"] {
+    padding: 0px 5px;
+  }
+
+  footer .space {
+    padding: 10px 0px;  
+  }
+
+  header li {
+    padding: 10px 15px 10px 10px;
+  }
+
+  .space {
+    padding: 20px 20px;
+  }
+
+  .space-above {
+    padding: 30px 0px 0px 0px;
+  }
+
+  .space-above-home {
+    padding: 30px 0px 0px 0px;
+  }
+
+  .welcome-back {
+    padding: 0px 0px 60px 0px;
+  }
+  
+  .description-space {
+    padding: 20px 60px;
+  }
+
+  .shop-women,
+  .shop-men {
+    padding: 30px 0px;
+    margin: 85px auto;
+  }  
+
+  .club-benefits-img-container {
+    margin: -149px auto 191px auto;
+    width: 100%;
+  } 
+
+  .img-container {
+    margin: -149px 0px 0px 0px;
+  }
+
+  .jacket-info { 
+    margin: -50px auto -120px auto;
+    justify-content: center;
+  }
+
+  .checkout-container-info {
+    margin: -120px auto 0px auto;
+  } 
+
+  .all-jackets-container {
+    margin: -100px auto 100px auto;
+  }
+
+  .about-container, .contact-container, .login-container, .signup-container {
+    margin: 80px auto -80px auto;
+  }
+
+  .space-above-success-top {
+    margin: -84px;
+  }
+
+  nav li, .club-benefits-container {
+    margin: 0 auto;
+  }
+
+  .img-container-checkout-success {
+    margin: 25px auto 10px auto; 
+  } 
+
+  .hr-half {
+    margin: 20px auto 20px;
+  }  
+
+  .header-container {
+    margin: 67px;
+  }  
+
+  .about-container, .contact-container {
+    top: -178px;   
+  }  
+
+  .login-container, .signup-container, .checkout-container, .checkout-container-cart {
+    top: -168px;
+  }
+
+  .bottom-divider {
+    top: -148px;
+  }
+
+  .club-benefits-container {
+    top: -121px;
+  }
+
+  .jacket-specific-title-container, .specific-jacket-container {
+    top: -87px;
+    margin: 0px 0px 0px 50px;
+  }
+
+  .logo-container {
+    top: 107px;
+    left: 10%;
+  }
+
+  .box-container {
+    padding: 5px 0px;
+    background: var(--green);
+  }
+
+  .cta-explore, .cta-explore-about {
+    padding: 16px 14px;
+    font-size: 28px; 
+  }  
+
+  .center-shop {
+    margin: 20px auto 20px auto;
+    width: 85%;
+  }
+
+  .shop-women-container,
+  .shop-men-container {
+    width: 400px;   
+    height: 267px;  
+    margin: 0 auto 80px auto;
+    align-items: center;
+  }
+
+  .nav-i-desktop {
+    position: absolute;
+    left: 99%;
+    top: 136px;
+    transform: translateX(-99%);
+  }  
+
+  header form {
+    left: 70%;
+    top: -62px;
+    padding: 16px 0px;
+    background: var(--transparent);
+  }
+
+  header div, header div li, header div a {
+    font-family: var(--text-cta-paragraph);
+    color: var(--white); 
+  }
+
+  .nav-i-desktop i {
+    color: var(--black);
+  }
+
+  .cta-homepage, .cta-continue-shopping, header div, header div li, header div a {
+    font-size: 16px;
+  }  
+
+  .cta-explore, .cta-explore-about, .shop-women, .shop-men {
+    font-size: 28px;
+  }  
+
+  nav a {
+    font-family: georgia;
+    font-size: 24px;
+    color: var(--black);
+    text-decoration: none;
+  }
+
+}
+
+
+@media (min-width: 1500px) {
+  
+  .shop-women-container {
+    background: url(/images/desk_large_woman_in_yellow_jacket_bike.jpg) no-repeat;
+  }
+  
+  .shop-men-container {
+    background: url(/images/desk_large_man_running_on_mountain.jpg) no-repeat;
+  }
+  
+  #jacket-specific-women select, #jacket-specific-men select {
+    width: 20%;
+  }  
+
+  #cart-checkout main form input {
+    width: 35%;
+  } 
+
+  .about-container, .club-benefits-container, .login-container, .signup-container {
+    width: 40%;
+  }
+
+  .contact-container, .checkout-container-delivery fieldset {
+    width: 50%;
+  }
+
+  .club-benefits-container, .checkout-container, #login main form input, #signup main form input {
+    width: 60%;
+  }
+
+  .shop-women-container,
+  .shop-men-container {
+    width: 500px; 
+    height: 333px;  
+  }
+
+  .space-above {
+    padding: 30px 0px 0px 0px;
+  }
+
+  .description-space {
+    padding: 20px 100px;
+  }
+
+  .shop-women,
+  .shop-men {
+    padding: 38px 0px;
+    margin: 115px auto;
+  }  
+
+}
+
+
+@media (min-width: 1800px) {
+
+  .description-space {
+    padding: 20px 130px;
+  }
+
+  #cart-checkout main form input {
+    width: 35%;
+  }
+
+  .checkout-container-delivery fieldset, #login main form input, #signup main form input {
+    width: 40%;
+  }
+
+}
+
+

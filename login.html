@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Rainydays provide waterproof rain jackets to active men and women. We aim to provide affordable, durable and sustainable jackets made to last all seasons."/>
+    <meta name="description" content="Login to your Rainydays account"/>
     <link href="/css/styles.css" rel="stylesheet"/>
     <link href="/css/media.css" rel="stylesheet"/>
     <script src="https://kit.fontawesome.com/59b5ace465.js" crossorigin="anonymous"></script>
-    <title>Rainydays | Home</title>
+    <title>Rainydays | Login</title>    
   </head>
-  <body>
+  <body id="login">
     <header>     
       <div class="box-container">
         <li><a href="/signup.html" class="linear-gradient-signup">Sign up and get 20% off your first order</a></li> 
@@ -26,9 +26,10 @@
       </div>
       <div class="header-container"></div> 
       <label for="menu-checkbox" class="hamburger-icon"><i class="fa-light fa-bars"></i></label> 
-      <input type="checkbox" id="menu-checkbox">  
-      <nav>
-        <hr class="top-divider"> 
+      <input type="checkbox" id="menu-checkbox"> 
+      <nav> 
+        <hr class="top-divider">
+        <div class="decor-img"></div>
         <li><a href="/all_jackets_women_&_men.html" class="linear-gradient-nav l-spacing">Jackets</a></li>
         <li><a href="/about.html" class="linear-gradient-nav l-spacing">About</a></li>
         <li><a href="/contact.html" class="linear-gradient-nav l-spacing">Contact</a></li>
@@ -36,37 +37,34 @@
         <li class="nav-mobile"><a href="/signup.html" class="nav-itext linear-gradient-nav-itext">Sign up to Rainydays club</a></li>
         <li class="nav-mobile"><a href="/club_benefits.html" class="nav-itext linear-gradient-nav-itext">Benefits of signing up</a></li>
         <li class="nav-mobile"><a href="/cart_&_checkout_women_original_jacket_burgundy.html"><i class="fa-solid fa-cart-shopping"></i></a><a href="/cart_&_checkout_women_original_jacket_burgundy.html" class="nav-itext linear-gradient-nav-itext">View cart</a></li> 
-      </nav> 
+      </nav>  
       <hr class="bottom-divider">
       <div class="nav-i-desktop">
         <li><a href="/login.html"><i class="fa-solid fa-user"></i></a></li>
         <li><a href="/cart_&_checkout_women_original_jacket_burgundy.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
-      </div>             
-      <div class="img-container">
-        <img src="/images/home_train.jpg" alt="Male in black rain jacket waiting on an orange train in the rain" class="img-home"/>                   
-      </div>  
-      <div>
-        <a href="/all_jackets_women_&_men.html" class="cta cta-explore">Explore</a> 
-      </div> 
-      <div class="space-above"></div>   
-    </header>
-    <main> 
-      <div>
-        <h1 class="slogan">Jackets made to last all seasons</h1>
-        <hr class="hr-half"> 
       </div>
-      <div class="space-above-home"></div>
-      <div class="center-shop">
-        <div class="shop-women-container">
-          <a href="/all_jackets_women.html" class="shop-women">Shop women</a>
+    </header> 
+    <main>
+      <section class="login-container">
+        <h1 class="h-center">Log in to your account</h1>
+        <hr>
+        <div class="input-container"></div>
+          <form action="/index.html" method="get">
+            <fieldset>
+              <div class="space-above">
+              <input type="email" name="email" placeholder="Type your e-mail" required>
+              <input type="password" name="firstname" placeholder="Type your password" required>
+              <div class="space-above"></div>
+              <input type="submit" value="Log in" class="cta cta-checkout">
+              <div class="newuser">
+                <a href="/signup.html" class="linear-gradient-newuser">New user? Create a free Rainydays account</a>                  
+              </div>                
+            </fieldset>
+          </form>
+          <div class="space-above"></div>
         </div>
-        <div class="space"></div>
-        <div class="shop-men-container">
-          <a href="/all_jackets_men.html" class="shop-men">Shop men</a>
-        </div>
-        <div class="space-cta"></div>
-      </div> 
-    </main>
+      </section>    
+    </main>    
     <footer>
       <div class="green-img"></div>
       <form action="/index.html" method="get">
