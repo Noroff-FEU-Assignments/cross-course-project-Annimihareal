@@ -44,11 +44,11 @@
     font-size: large;
   }
 
-  .border-summary hr, .about-container, .contact-container, .club-benefits-container, .login-container, .signup-container {
+  .border-summary hr, .about-container, .contact-container {
     width: 80%;
   }
 
-  .checkout-container-cart .border, .checkout-container-cart .border-summary, #cart-checkout main form input, #login main form input, #signup main form input, #checkout-success main hr,  #jacket-specific-women select, #jacket-specific-men select, #all-jackets main hr, #jackets-women main hr, #jackets-men main hr, footer input[type="text"] {
+  .checkout-container-cart .border, .checkout-container-cart .border-summary, #cart-checkout main form input, #checkout-success main hr,  #jacket-specific-women select, #jacket-specific-men select, #all-jackets main hr, #jackets-women main hr, #jackets-men main hr, footer input[type="text"], {
     width: 90%;
   }
 
@@ -66,7 +66,7 @@
     padding: 5px 0px;  
   }
 
-  .cta-explore, .cta-homepage, .cta-continue-shopping, .cta-checkout {
+  .cta-explore, .cta-homepage, .cta-continue-shopping, .cta-checkout, .cta-submit, .cta-add-to-cart {
     padding: 8px 6px;
   }  
 
@@ -74,19 +74,13 @@
     padding: 10px 0px 0px 0px;
   }
 
-  #cart-checkout main form input, #login main form input, #signup main form input {
+  #cart-checkout main form input {
     padding: 10px 5px;
   }
 
   .item-four {
     padding-left: 11px;
   }  
-
-  .shop-women,
-  .shop-men {
-    padding: 15px 0px;
-    margin: 50px auto;  
-  }
 
   .slogan {
     padding: 20px 0px 0px 0px;
@@ -134,15 +128,16 @@
     justify-content: center;
   }
 
-  .cta-explore, .slogan, .cta-homepage, .cta-continue-shopping, .cta-checkout  {
+  .cta-explore, .slogan, .cta-homepage, .cta-continue-shopping, .cta-checkout, .cta-add-to-cart {
     font-size: 12px;
   }
+
 
   #cart-checkout main form ::placeholder, #cart-checkout main form input, fieldset select, .order-summary p, .description-space p {
     font-size: 14px;
   }
  
-  #checkout-success main p, .shop-women, .shop-men  {
+  #checkout-success main p  {
     font-size: 16px;
   }
 
@@ -169,12 +164,13 @@
     overflow: hidden;
   }
 
-  .about-container, .contact-container, .club-benefits-container, .checkout-container, .login-container, .signup-container, footer input[type="text"], #all-jackets main hr, #jackets-women main hr, #jackets-men main hr, .border-summary hr, .checkout-container-cart .border, .checkout-container-cart .border-summary {
+  .about-container, .contact-container, .checkout-container, footer input[type="text"], #all-jackets main hr, #jackets-women main hr, #jackets-men main hr, .border-summary hr {
     width: 80%;
   }
 
-  #cart-checkout main form input, #login main form input, #signup main form input {
-    width: 90%
+
+  #cart-checkout main form input {
+    width: 80%;
   }
 
   .border, .border-summary {
@@ -185,7 +181,7 @@
     padding: 10px 0px 0px 0px;
   }
 
-  #cart-checkout main form input, #login main form input, #signup main form input {
+  #cart-checkout main form input {
     padding: 10px 5px;
   }
 
@@ -235,6 +231,10 @@
     font-size: 16px;
   }
 
+  .contact ::placeholder {
+    font-size: 14px;
+  }
+
 }
 
 
@@ -244,7 +244,7 @@
     grid-template-columns: repeat(2, 3fr);
   }
 
-  #cart-checkout main form input, #login main form input, #signup main form input {
+  #cart-checkout main form input {
     width: 80%;
   }
 
@@ -253,7 +253,10 @@
 
 @media (min-width: 500px) {
 
-  
+  .contact ::placeholder {
+    font-size: 16px;
+  }
+
   .description-space {
     display: inline-block;
     padding: 20px 50px;
@@ -285,7 +288,7 @@
     width: 50%;
   }
 
-  #all-jackets main hr, #jackets-women main hr, #jackets-men main hr, #cart-checkout main form input, #login main form input, #signup main form input {
+  #all-jackets main hr, #jackets-women main hr, #jackets-men main hr, #cart-checkout main form input {
     width: 70%;
   }    
 
@@ -348,19 +351,12 @@
     background: url(/images/tab_man_running_on_mountain.jpg) no-repeat;
   }
 
-  .shop-women,
-  .shop-men {
-    font-size: 24px;
-    padding: 30px 0px;
-    margin: 90px auto;  
-  }
-
   #jacket-specific-women select, #jacket-specific-men select {
     width: 50%;
   }
 
   .about-container,
-  .contact-container, .checkout-success-container, .club-benefits-container, .checkout-container, .login-container, .signup-container {
+  .contact-container, .checkout-success-container, .checkout-container {
     width: 70%;
   }
 
@@ -399,10 +395,6 @@
     width: 250px;
     height: 230px;
     top: 120px;
-  }
-
-  #cart-checkout main form input, #login main form input, #signup main form input {
-    width: 60%;
   }
 
   #about .decor-img {
@@ -465,7 +457,7 @@
 @media (min-width: 900px) {
   
   .original-jacket img { 
-    display: inline-flex; 
+    display: flex;
     max-width: 390px;
   }
 
@@ -487,17 +479,13 @@
     padding: 20px 20px;
   }
 
-  #cart-checkout main form input {
-    width: 35%;
-    padding: 10px 0px;
-  }
 
   #jacket-specific-women select, #jacket-specific-men select {
     width: 40%;
   }
   
   .checkout-container-delivery fieldset {
-    width: 70%;
+    width: 80%;
   }
 
   .decor-img {
@@ -507,9 +495,10 @@
     top: 97px;
   }
 
-  fieldset input[type="text"], fieldset input[type="tel"], fieldset input[type="email"], fieldset input[type="month"], fieldset input[type="password"]  {
+  fieldset input[type="text"], fieldset input[type="tel"], fieldset input[type="email"], fieldset input[type="date"], fieldset input[type="password"], .contact textarea {
     margin: 15px 20px;
   }
+
 
   .cart-img-container {
     margin: 20px 10px 0px 20px;
@@ -543,11 +532,15 @@
 /* If desktop */
 @media (min-width: 1100px) {
 
+  .original-jacket img { 
+    display: inline-flex;
+  }
+
   #menu-checkbox:checked, header input[type="checkbox"], header hr, .hamburger-icon, .nav-mobile, .decor-img, #checkout-success .space-cta {
     display: none;
   }
 
-  .about-container, .contact-container, .club-benefits-container, .login-container, .signup-container, .club-benefits-img-container {
+  .about-container, .contact-container {
     display: flex 1;
   }
 
@@ -567,10 +560,12 @@
     left: 50%;
     top: -133px;
     transform: translateX(-50%);
+    justify-content: center;
     text-align: center; 
     background: none;
     overflow: hidden;
   } 
+
 
   .jacket-specific-title-container {
     justify-content: left;
@@ -585,7 +580,7 @@
     grid-template-columns: repeat(4, 4fr);
   }
 
-  nav, .about-container, .contact-container, .club-benefits-container, .login-container, .signup-container, .checkout-container-cart,  .checkout-container, .checkout-container-cart, .jacket-specific-title-container, .specific-jacket-container {
+  nav, .about-container, .contact-container, .checkout-container-cart,  .checkout-container, .checkout-container-cart, .jacket-specific-title-container, .specific-jacket-container {
     position: relative;
   }  
 
@@ -601,15 +596,13 @@
     width: 30%;
   } 
 
-  #cart-checkout main form input {
-    width: 35%;
-  }
 
-  #all-jackets main hr, #jackets-women main hr, #jackets-men main hr, #login main form input, #signup main form input {
+
+  #all-jackets main hr, #jackets-women main hr, #jackets-men main hr {
     width: 50%;
   }  
 
-  .about-container, .contact-container, .club-benefits-container, .checkout-container, .login-container, .signup-container, .checkout-container-delivery fieldset {
+  .about-container, .contact-container, .checkout-container {
     width: 60%;
   }
 
@@ -658,17 +651,6 @@
     padding: 20px 60px;
   }
 
-  .shop-women,
-  .shop-men {
-    padding: 30px 0px;
-    margin: 85px auto;
-  }  
-
-  .club-benefits-img-container {
-    margin: -149px auto 191px auto;
-    width: 100%;
-  } 
-
   .img-container {
     margin: -149px 0px 0px 0px;
   }
@@ -686,7 +668,7 @@
     margin: -100px auto 100px auto;
   }
 
-  .about-container, .contact-container, .login-container, .signup-container {
+  .about-container, .contact-container {
     margin: 80px auto -80px auto;
   }
 
@@ -694,8 +676,8 @@
     margin: -84px;
   }
 
-  nav li, .club-benefits-container {
-    margin: 0 auto;
+  nav {
+    margin: -20px auto;
   }
 
   .img-container-checkout-success {
@@ -710,20 +692,17 @@
     margin: 63px;
   }  
 
-  .about-container, .contact-container {
-    top: -178px;   
-  }  
 
-  .login-container, .signup-container, .checkout-container, .checkout-container-cart {
+  .contact-container, .about-container {
+    margin-bottom: 80px;
+  }
+
+  .checkout-container, .checkout-container-cart {
     top: -168px;
   }
 
   .bottom-divider {
     top: -148px;
-  }
-
-  .club-benefits-container {
-    top: -121px;
   }
 
   .jacket-specific-title-container, .specific-jacket-container {
@@ -762,7 +741,7 @@
   .nav-i-desktop {
     position: absolute;
     left: 99%;
-    top: 136px;
+    top: 122px;
     transform: translateX(-99%);
   }  
 
@@ -786,7 +765,7 @@
     font-size: 16px;
   }  
 
-  .cta-explore, .cta-explore-about, .shop-women, .shop-men {
+  .cta-explore, .cta-explore-about {
     font-size: 28px;
   }  
 
@@ -815,18 +794,18 @@
   }  
 
   #cart-checkout main form input {
-    width: 35%;
+    width: 60%;
   } 
 
-  .about-container, .club-benefits-container, .login-container, .signup-container {
+  .about-container {
     width: 40%;
   }
 
-  .contact-container, .checkout-container-delivery fieldset {
+  .contact-container {
     width: 50%;
   }
 
-  .club-benefits-container, .checkout-container, #login main form input, #signup main form input {
+ .checkout-container {
     width: 60%;
   }
 
@@ -844,11 +823,6 @@
     padding: 20px 100px;
   }
 
-  .shop-women,
-  .shop-men {
-    padding: 38px 0px;
-    margin: 115px auto;
-  }  
 
 }
 
@@ -860,11 +834,11 @@
   }
 
   #cart-checkout main form input {
-    width: 35%;
+    width: 60%;
   }
 
-  .checkout-container-delivery fieldset, #login main form input, #signup main form input {
-    width: 40%;
+  .checkout-container-delivery fieldset {
+    width: 60%;
   }
 
 }

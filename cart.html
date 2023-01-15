@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View cart and checkout your original Rainydays waterproof jacket in Burgundy for women">
+    <link href="/css/styles.css" rel="stylesheet">
+    <link href="/css/media.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/59b5ace465.js" crossorigin="anonymous"></script>
+    <title>Rainydays | Cart</title>    
+  </head>
+  <body id="cart-checkout">
+    <header>     
+      <div class="box-container">
+        <ul><li><a href="/jackets.html" class="linear-gradient-discount">Get 20% off your first order</a></li></ul> 
+        <ul><li><i class="fas fa-truck"></i><aside>Fast delivery</aside></li></ul>
+        <ul><li>30 Days return policy</li></ul>    
+      </div>
+      <form action="/jacket.html" method="get">
+        <input type="text" id="searchbox" placeholder="Type to search" required>
+        <button type="submit"><i class="fas fa-search"></i></button> 
+      </form>  
+      <div class="logo-container">
+        <a href="/index.html"><img src="/images/10_02_22_RainyDays_Logo_Altered_Colors_default.png" alt="Rainydays home logo" class="logo"></a>
+      </div>
+      <div class="header-container"></div> 
+      <label for="menu-checkbox" class="hamburger-icon"><i class="fa-light fa-bars"></i></label> 
+      <input type="checkbox" id="menu-checkbox"> 
+      <nav> 
+        <hr class="top-divider">
+        <div class="decor-img"></div>
+        <ul><li><a href="/index.html" class="linear-gradient-nav l-spacing">Home</a></li></ul>        
+        <ul><li><a href="/about.html" class="linear-gradient-nav l-spacing">About</a></li></ul>
+        <ul><li><a href="/jackets.html" class="linear-gradient-nav l-spacing">Jackets</a></li></ul>
+        <ul><li><a href="/contact.html" class="linear-gradient-nav l-spacing">Contact</a></li></ul>
+        <ul><li class="nav-mobile"><a href="/cart.html"><i class="fa-solid fa-cart-shopping"></i></a><a href="/cart.html" class="linear-gradient-nav l-spacing linear-gradient-active">View cart</a></li></ul> 
+      </nav>  
+      <hr class="bottom-divider">
+      <div class="nav-i-desktop">
+        <ul><li><a href="/cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li></ul>
+      </div>
+    </header> 
+    <main>
+      <section class="checkout-container">
+        <h1 class="h-center checkout-success">Cart & Checkout</h1>
+        <hr>
+      </section>
+      <section class="checkout-container-cart">
+        <h2 class="yourcart emptyCart">1. Your cart</h2>
+        <div class="space-above"></div> 
+        <div class="border border-cart">
+          <div class="cart-img-container">
+            <div class="cart-poduct">
+              <div class="selected-jacket">
+                <img src="/images/jacket_her_burgundy_front.jpg" alt="Burgundy waterproof jacket in shopping cart"> 
+              </div>
+            </div>
+          </div>
+          <div class="space-cart-info">
+            <h1>Waterproof jacket</h1>
+            <h2>Rainydays</h2>
+            <p class="price">690.00 NOK</p>
+            <p>Size: Medium</p>
+            <p>Color: Burgundy</p>
+            <p>Quantity: 1</p>
+          </div>
+        </div>
+        <div class="border-summary">
+          <div class="order-summary">
+            <h2 class="receipt">Order summary</h2>
+            <hr>
+            <div class="summary">
+              <p class="confirmOrder">Subtotal</p> 
+              <p class="item-one">690 NOK</p>
+            </div>
+            <div class="summary">
+              <p class="orderConf">VAT</p>
+              <p class="item-two">45 NOK</p>
+            </div>
+            <div class="summary">
+              <p class="removeShip">Shipping</p>
+              <p class="item-three">30 NOK</p>
+            </div>
+            <div class="summary">
+              <p class="removeDisc">Discounts</p>
+              <p class="item-four">-138 NOK</p>
+            </div>
+            <div class="summary">
+              <p class="total">Total</p>
+              <p class="item-five">597 NOK</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="space-above"></div>
+      <div class="checkout-container-info">
+        <h2 class="yourcart checkoutComplete">2. Checkout</h2>
+      </div>
+      <div class="checkout-container-delivery">
+        <div class="input-container">
+          <form id="checkoutForm" method="get">
+            <fieldset class="deliverypayment">
+              <legend>Your information</legend> 
+              <div class="success"></div>              
+              <div class="space-above"></div> 
+              <input type="text" name="fullname" id="name" placeholder="Type customer name (required)">
+              <div class="formError" id="fullNameError">Please enter your first and last name</div>
+
+              <input type="text" name="address" id="address" placeholder="Type delivery address (required)">
+              <div class="formError" id="addressError">Please enter your address</div>
+
+              <input type="text" name="cardholder" id="cardholder" placeholder="Type cardholders name (required)">
+              <div class="formError" id="cardholderError">Please enter cardholders first and last name</div>
+
+              <input type="tel" name="cardnumber" id="cardnumber" placeholder="xxxx xxxx xxxx xxxx (required)">
+              <div class="formError" id="cardnumberError">Your cardnumber must consist of 16 digits</div>
+
+              <input type="date" name="expirationdate" id="expirationdate">
+              <div class="formError" id="expirationError">Expiration date is required</div>
+
+              <input type="tel" name="ccvcode" id="ccvcode" placeholder="CCV (required)">
+              <div class="formError" id="ccvError">CVC number is required and must consist of 3 digits</div>
+
+              <div class="space-above"></div>
+              <button class="cta cta-checkout" type="submit" id="checkout-button">Checkout</button>              
+            </fieldset>      
+          </form>                       
+        </div>
+      </div>                
+    </main>    
+    <footer>
+      <div class="green-img"></div>
+      <form action="/index.html" method="get">
+        <input type="text" id="e-mail" placeholder="Type your email" required>
+        <button type="submit" class="subscribe">Subscribe</button> 
+        <div class="space"></div> 
+        <hr>
+      </form> 
+      <div class="sitemap">
+        <ul class="center">
+          <li><a href="/about.html" class="linear-gradient-footer">We are Rainydays</a></li>             
+          <li><a href="/index.html" class="linear-gradient-footer">Payment & refunds</a></li>
+          <li><a href="/index.html" class="linear-gradient-footer">Shipping & returns</a></li>
+          <li><a href="/contact.html" class="linear-gradient-footer">Contact us</a></li>            
+        </ul>
+        <div class="pp-cookies">
+          <hr>
+          <ul>
+            <li><a href="/index.html" class="linear-gradient-footer">Privacy policy & cookies</a></li> 
+          </ul>
+          <p class="copy">© Rainydays 2023</p>  
+        </div>   
+      </div>
+    </footer> 
+    <script src="/js/cart.js"></script>
+  </body>
+</html>

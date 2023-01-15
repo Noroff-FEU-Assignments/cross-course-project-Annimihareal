@@ -20,7 +20,8 @@
 .cta-add-to-cart:hover, 
 .cta-homepage:hover,
 .cta-continue-shopping:hover, 
-.cta-checkout:hover {
+.cta-checkout:hover,
+.cta-submit:hover {
   background-color: rgba(0, 0, 0, 0.8);
   border-color: var(--black);
   transition: ease-out 0.6s;
@@ -44,24 +45,8 @@
   background: url(/images/mob_man_running_on_mountain.jpg) no-repeat;
 }
   
-.shop-women,
-.shop-men {
-  width: 100%;
-  padding: 20px 0px;
-  margin: 60px auto;
-  border: solid 2px var(--blue-text);
-  background: rgba(40, 92, 110, 0.85);
-  justify-content: center;
-  text-transform: uppercase;  
-  font-size: 20px;
-}
 
-.shop-women:hover,
-.shop-men:hover {
-  transform: scale(1.2);
-}
-
-.cta-homepage, .cta-continue-shopping, .cta-checkout {
+.cta-homepage, .cta-continue-shopping, .cta-checkout, .cta-submit {
   padding: 12px 20px !important
 }
 
@@ -74,11 +59,11 @@
 }
 
 .center-cta-checkout {
-  margin: 40px auto 40px auto;
-  justify-content: center;
+  margin: 20px auto 20px auto;
 }
 
-.cta-checkout {
+
+.cta-checkout, .cta-submit, .cta-add-to-cart {
   font-size: 16px;
 }
 
@@ -86,11 +71,11 @@
   font-size: 18px;
 }
 
-.cta, .shop-women, .shop-men, .cta-view-details, .cta-add-to-cart, .cta-homepage, .subscribe, .cta-explore, .cta-explore-about, .cta-view-details, .cta-add-to-cart, .cta-homepage, .cta-continue-shopping, .cta-checkout {
+.cta, .cta-view-details, .cta-add-to-cart, .cta-homepage, .subscribe, .cta-explore, .cta-explore-about, .cta-view-details, .cta-add-to-cart, .cta-homepage, .cta-continue-shopping, .cta-checkout, .cta-submit {
   color: var(--white);
 }
 
-#jacket-specific-women .cta-checkout, #jacket-specific-men .cta-checkout, #cart-checkout .cta-checkout {
+#jacket-specific-women .cta-checkout, #jacket-specific-men .cta-checkout, #cart-checkout .cta-checkout, .cta-submit {
   text-transform: none;
 }
 
@@ -109,7 +94,7 @@
     padding: 12px 12px;
 }
 
-.cta-explore, .subscribe, .cta-explore-about, .cta-view-details, .cta-add-to-cart, .cta-homepage, .cta-continue-shopping, .cta-checkout  {
+.cta-explore, .subscribe, .cta-explore-about, .cta-view-details, .cta-add-to-cart, .cta-homepage, .cta-continue-shopping, .cta-checkout, .cta-submit  {
   border: solid 2px var(--blue-text);
   background: rgba(40, 92, 110, 0.85); 
 }
